@@ -1,0 +1,1 @@
+const menu = ["Collections", "Men", "Women", "About", "Contact"];

@@ -1,0 +1,13 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 20%;
+  background-color: aqua;
+  width: 1440px;
+}
+/*# sourceMappingURL=header.css.map */

@@ -1,6 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {menuList}  from '../data/menu';
+import Logo from '../components/Logo';
+import Menu from './Menu';
+import Icons from './Icons';
+import '../css/header.scss'
 
 
 class Header extends React.Component{
@@ -9,7 +12,9 @@ class Header extends React.Component{
     {
         return(
             <header>
-                <h1>{menuList[1]}</h1>
+                <Logo />
+                <Menu />
+                <Icons />
             </header>
         )
     }
