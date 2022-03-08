@@ -1,1 +1,1 @@
-const menu = ["Collections", "Men", "Women", "About", "Contact"];
+export const menu = ["Collections", "Men", "Women", "About", "Contact"];

@@ -1,0 +1,10 @@
+.MenuList {
+  list-style: none;
+  display: block;
+}
+
+.MenuList li {
+  float: left;
+  padding: 0 2rem;
+}
+/*# sourceMappingURL=menu.css.map */

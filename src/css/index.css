@@ -5,6 +5,10 @@
           box-sizing: border-box;
 }
 
+html {
+  font-size: 18px;
+}
+
 #root {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,6 +25,5 @@
           flex-direction: column;
   width: 100vw;
   height: 100vh;
-  background-color: yellow;
 }
 /*# sourceMappingURL=index.css.map */

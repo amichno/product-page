@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    font-size: 18px;
+}
+
 #root{
     display: flex;
     align-items: center;
@@ -11,5 +15,4 @@
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    background-color: yellow;
 }
