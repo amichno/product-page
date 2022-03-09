@@ -6,8 +6,9 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  height: 20%;
+  height: 15%;
   width: 1440px;
   padding-top: 1rem;
+  border-bottom: 1px solid grey;
 }
 /*# sourceMappingURL=header.css.map */

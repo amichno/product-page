@@ -5,6 +5,12 @@
 
 .MenuList li {
   float: left;
-  padding: 0 2rem;
+  padding: 0 1.5rem;
+  padding-bottom: 11.5%;
+}
+
+.MenuList li:hover {
+  border-bottom: 5px solid #ff7d1a;
+  cursor: pointer;
 }
 /*# sourceMappingURL=menu.css.map */

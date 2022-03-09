@@ -9,14 +9,15 @@ class Icons extends React.Component{
     {
         return(
             <div className='Icons'>
-                <button>
-                    X
+                <button className='Chart-icon'>
+                    
                 </button>
-                <div>
-                    Ikona
+                <div className='Avatar'>
+                    
                 </div>
                 
             </div>
+           
         )
     }
 }

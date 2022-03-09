@@ -1,10 +1,34 @@
+@import 'variables.scss';
+
 .Icons{
     display: flex;
     flex-direction: row;
-    padding-left: 30%;
-   // float: right;
+    padding-left: 35%;
+    line-height: 2rem;
 }
 
-button{
-    height: 1rem;
+.Chart-icon{
+    height: 2rem;
+    width: 2rem;
+    background-image: url(../images/icon-cart.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: none;
+    background-color: $White;
+    padding-right: 4rem;
+    cursor:pointer;
+}
+
+.Avatar{
+    width: 2.3rem;
+    height: 2.3rem;
+    background-image: url(../images/image-avatar.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: 2px solid $White;
+    cursor:pointer;
+    &:hover{
+        border: 2px solid $orange;
+        border-radius: 100%;
+    }
 }
