@@ -1,9 +1,10 @@
 @import 'variables.scss';
 
 .Cart{
+   // display: none;
     background-color: $White;
-    width: 10rem;
-    height: 5rem;
+    width: 12rem;
+    height: 10rem;
     z-index: 2;
     margin-top: -3rem;
     margin-left: 70%;
@@ -12,11 +13,22 @@
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px $Very-vark-blue;
+    box-shadow: 0 10px 25px hsla(220, 13%, 13%, 0.5);
     position: relative;
-    p{
-        padding: 1rem 1rem;
+    .Cart-title{
+        padding: 0.5rem 1rem;
         border-bottom: 1px solid $Grayish-blue ;
+        font-weight: 600;
     }
 
+}
+
+.Empty{
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 20%;
+    color: $Grayish-blue;
+    font-size: 0.8rem;
+    text-align: center;
+    //background-color: aqua;
 }
