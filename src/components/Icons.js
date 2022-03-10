@@ -18,14 +18,11 @@ class Icons extends React.Component{
     {
         return(
             <div className='Icons'>
-                <button className='Chart-icon' onClick={this.ToggleCart} >
-                    
+                <button className='Chart-icon' onClick={this.ToggleCart} >    
                 </button>
                 <Cart />
-                <div className='Avatar'>
-                    
-                </div>
-                
+                <div className='Avatar'>       
+                </div> 
             </div>
            
         )
