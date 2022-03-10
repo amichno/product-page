@@ -1,3 +1,11 @@
+.Menu {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 100%;
+  width: 40rem;
+}
+
 .MenuList {
   list-style: none;
   display: block;
@@ -5,8 +13,9 @@
 
 .MenuList li {
   float: left;
-  padding: 0 1.5rem;
-  padding-bottom: 11.5%;
+  padding: 0 1rem;
+  padding-bottom: 2rem;
+  border-bottom: 5px solid white;
 }
 
 .MenuList li:hover {

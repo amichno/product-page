@@ -1,18 +1,24 @@
+@import 'variables.scss';
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    font-family: $Font;
 }
 
 html{
-    font-size: 18px;
+    font-size: 16px;
 }
 
 #root{
     display: flex;
     align-items: center;
-    justify-content: center;
+    //justify-content: center;
     flex-direction: column;
-    width: 100vw;
+    margin: 0 auto;
+    width: 1440px;
     height: 100vh;
+
 }

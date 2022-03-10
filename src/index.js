@@ -11,7 +11,6 @@ import './css/index.scss'
 ReactDOM.render(
   <React.StrictMode>
     <Header />
-    <Cart />
     <Section />
   </React.StrictMode>,
   document.getElementById('root')

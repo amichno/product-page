@@ -1,12 +1,14 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
 }
 
 html {
-  font-size: 18px;
+  font-size: 16px;
 }
 
 #root {
@@ -16,14 +18,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 100vw;
+  margin: 0 auto;
+  width: 1440px;
   height: 100vh;
 }
 /*# sourceMappingURL=index.css.map */

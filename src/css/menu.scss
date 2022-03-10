@@ -1,15 +1,25 @@
 @import 'variables.scss';
 
+.Menu{
+   // background-color: aqua;
+    width:fit-content;
+    height: 100%;
+    width: 40rem;
+}
+
 .MenuList{
     list-style: none;
     display: block;
+   // width: 30rem;
     li{
         float: left;
-        padding: 0 1.5rem;
-        padding-bottom: 11.5%;
+        padding: 0 1rem;
+        padding-bottom: 2rem;
+        border-bottom: 5px solid $White;
         &:hover{
             border-bottom: 5px solid $orange;
             cursor: pointer;
+
         }
     }
 }

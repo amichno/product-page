@@ -1,10 +1,11 @@
 .Cart {
+  display: none;
   background-color: white;
-  width: 12rem;
+  width: 15rem;
   height: 10rem;
-  z-index: 2;
-  margin-top: -3rem;
-  margin-left: 70%;
+  z-index: 5;
+  margin-top: 3rem;
+  margin-left: -100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -15,12 +16,12 @@
   border-radius: 15px;
   -webkit-box-shadow: 0 10px 25px rgba(29, 32, 37, 0.5);
           box-shadow: 0 10px 25px rgba(29, 32, 37, 0.5);
-  position: relative;
+  position: absolute;
 }
 
 .Cart .Cart-title {
   padding: 0.5rem 1rem;
-  border-bottom: 1px solid #b6bcc8;
+  border-bottom: 1px solid rgba(182, 188, 200, 0.5);
   font-weight: 600;
 }
 

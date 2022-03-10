@@ -1,23 +1,24 @@
 @import 'variables.scss';
 
 .Cart{
-   // display: none;
+    display: none;
     background-color: $White;
-    width: 12rem;
+    width: 15rem;
     height: 10rem;
-    z-index: 2;
-    margin-top: -3rem;
-    margin-left: 70%;
+    z-index: 5;
+    margin-top: 3rem;
+    margin-left: -100%;
     display: flex;
     flex-direction: column;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
-    box-shadow: 0 10px 25px hsla(220, 13%, 13%, 0.5);
-    position: relative;
+    box-shadow: 0 10px 25px $Very-vark-blue-a;
+    position: absolute;
+    //background-color: aqua;
     .Cart-title{
         padding: 0.5rem 1rem;
-        border-bottom: 1px solid $Grayish-blue ;
+        border-bottom: 1px solid $Grayish-blue-a ;
         font-weight: 600;
     }
 

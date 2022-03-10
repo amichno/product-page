@@ -1,15 +1,18 @@
 import React from 'react';
-import {chartList} from '../data/chartList';
+import {cartList} from '../data/cartList';
 import '../css/cart.scss';
 
-class Chart extends React.Component{
+class Cart extends React.Component{
+    constructor(){
+        super();
+    }
 
     render(){
 
-        if(chartList.length == 0)
+        if(cartList.length == 0)
             var list = <p className='Empty'>Your cart is empty</p>;
          else
-            var list = chartList.map(({product, price, pcs})=>
+            var list = cartList.map(({product, price, pcs})=>
                 {
                     <li>product</li>
                 })
@@ -25,4 +28,4 @@ class Chart extends React.Component{
     }
 }
 
-export default Chart;
+export default Cart;

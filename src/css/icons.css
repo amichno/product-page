@@ -6,8 +6,10 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding-left: 35%;
+  padding-left: 5%;
   line-height: 2rem;
+  position: relative;
+  margin-left: 30%;
 }
 
 .Chart-icon {
