@@ -3,8 +3,8 @@ import {cartList} from '../data/cartList';
 import '../css/cart.scss';
 
 class Cart extends React.Component{
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
     }
 
     render(){
@@ -18,7 +18,7 @@ class Cart extends React.Component{
                 })
             
         return(
-            <div className='Cart'>
+            <div className='Cart' style = {{display: this.props.disp}}>
                 <p className='Cart-title'>Cart</p>
                 <ul>
                     {list}  

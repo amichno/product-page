@@ -26,7 +26,7 @@ class Icons extends React.Component{
         return(
             <div className='Icons'>
                 <button className='Chart-icon' onClick={this.ToggleCart} >  
-                <Cart />  
+                <Cart disp = {this.state.display}/>  
                 </button>
                
                 <div className='Avatar'>       
