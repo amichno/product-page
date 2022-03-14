@@ -2,24 +2,34 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './gallery.scss';
 import {products_photos, products_photos_thumb} from '../../data/products_photos';
-import Lightbox from "react-awesome-lightbox";
-import "react-awesome-lightbox/build/style.css";
 
 
+const index = [1,2,3,4];
+const url_image ='../../images-product-';
 
 
 class Gallery extends React.Component{
+
+    constructor(){
+        super()
+    }
+    
 
     render()
     {
         return(
             <div className='Gal'>
                 
-                     <div>
+                    {index.map(id =>
+                        <div>
+                            
+                            <img src={require('${url_image}'+'${id}'+'.jpg')}/>
+
+                        </div>
+                    )}                  
+                                     
                         
-                                     <img src="../../images/image-product-1-thumbnail.jpg" />
-                        
-                    </div>
+                   
               
             </div>
         )
