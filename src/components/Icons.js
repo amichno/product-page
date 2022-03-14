@@ -18,18 +18,17 @@ class Icons extends React.Component{
             this.setState({display: 'flex'}); 
         else    
             this.setState({display: 'none'});
-      //alert(this.state.display);
     }
 
     render()
     {
         return(
-            <div className='Icons'>
+            <div className='Icons' alr = 'Basket icon'>
                 <button className='Chart-icon' onClick={this.ToggleCart} >  
                 <Cart disp = {this.state.display}/>  
                 </button>
                
-                <div className='Avatar'>       
+                <div className='Avatar' alt='User avatar'>       
                 </div> 
             </div>
            

@@ -8,7 +8,7 @@ class Logo extends React.Component{
     render()
     {
         return(
-            <div className='Logo'>
+            <div className='Logo' alt='Logo Sneakers'>
                 
             </div>
         )
