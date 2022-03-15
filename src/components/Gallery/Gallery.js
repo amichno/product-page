@@ -5,7 +5,9 @@ import {products_photos, products_photos_thumb} from '../../data/products_photos
 
 
 const index = [1,2,3,4];
+const id = 1;
 const url_image ='../../images-product-';
+
 
 
 class Gallery extends React.Component{
@@ -20,10 +22,10 @@ class Gallery extends React.Component{
         return(
             <div className='Gal'>
                 
-                    {index.map(id =>
+                    {products_photos_thumb.map((img) =>
                         <div>
                             
-                            <img src={require('${url_image}'+'${id}'+'.jpg')}/>
+                            <img src={require("../../images/image-product-"+id+"-thumbnail.jpg")}/>
 
                         </div>
                     )}                  
