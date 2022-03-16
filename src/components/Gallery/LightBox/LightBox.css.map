@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,GAAG,CAAA;EACC,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,WAAW,EAAE,MAAM;EACnB,eAAe,EAAE,MAAM;EACvB,OAAO,EAAE,EAAE;EACX,gBAAgB,EAAE,qBAAuB;CAC5C",
+    "sources": [
+        "LightBox.scss"
+    ],
+    "names": [],
+    "file": "LightBox.css"
+}
