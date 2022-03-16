@@ -14,15 +14,13 @@ class Gallery extends React.Component{
 
     constructor(){
         super()
-        this.state = {prev : 4};
         this.state = {view: 1};
-        //this.state = {next: 2};
         this.ChangeImg = this.ChangeImg.bind(this);
 
     }
 
-    ChangeImg(id){
-
+    ChangeImg(number){
+       this.setState({view: number});
     }
     
 
@@ -35,16 +33,15 @@ class Gallery extends React.Component{
                     </div>
                     <div className='ImgWraper'>
                         {index.map((id) =>
-                            <div className='Thumbnail'>
-                                <img className = "Item" src={require("../../images/image-product-"+id+"-thumbnail.jpg")}/>
-
+                            <div className='Thumbnail' >
+                                
+                                    <img className = "Item" src={require("../../images/image-product-"+id+"-thumbnail.jpg")}
+                                     onClick={()=>this.ChangeImg(id)}/>
+                                 
                             </div>
                         )}                  
 
-                    </div>             
-                        
-                   
-              
+                    </div>                                 
             </div>
         )
     }
