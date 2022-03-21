@@ -2,12 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './gallery.scss';
 
-
-
 const index = [1,2,3,4];
-
 const url_image ="../../images/image-product-";
-
 
 
 class Gallery extends React.Component{
@@ -15,15 +11,13 @@ class Gallery extends React.Component{
     constructor(){
         super()
         this.state = {view: 1,
-                        displayLB: 'none'};
+                     displayLB: 'none'};
         this.ChangeImg = this.ChangeImg.bind(this);
-
     }
 
     ChangeImg(number, visibility){
        this.setState({view: number});
        this.setState({displayLB: visibility});
-       
     }
     
 

@@ -1,6 +1,53 @@
-.Dis {
+.Description {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.Company {
+  color: #ff7d1a;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
+}
+
+.Title {
+  font-size: 2rem;
+  font-weight: 700;
+  padding-top: 2rem;
+}
+
+.Text {
+  font-size: 1rem;
+  color: #68707d;
+  padding-top: 2rem;
+}
+
+.Prices {
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.Discount {
+  background-color: #ffede0;
+  color: #ff7d1a;
+  border-radius: 15px;
+  padding: 0.25rem 0.25rem;
+  font-size: 0.5rem;
 }
 /*# sourceMappingURL=description.css.map */

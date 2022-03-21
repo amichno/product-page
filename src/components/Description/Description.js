@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './description.scss';
+import ButtonAdd from '../ButtonAdd/ButtonAdd';
 
 
 class Description extends React.Component{
@@ -8,20 +9,23 @@ class Description extends React.Component{
     render()
     {
         return(
-            <div className='Dis'>
-                Sneaker Company
+            <div className='Description'>
+               <div> 
+                    <h1 className='Company'>Sneaker Company</h1>
 
-                Fall Limited Edition Sneakers
+                    <p className='Title'>Fall Limited Edition Sneakers</p>
 
-                These low-profile sneakers are your perfect casual wear companion. Featuring a 
-                durable rubber outer sole, they’ll withstand everything the weather can offer.
+                    <p className='Text'>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+                    durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+                </div>
+                <div className='Prices'>
+                    <p>$125.00     <span className='Discount'>50%</span></p>
+                    <p>$250.00</p>
+                </div>
+               
 
-                $125.00
-                50%
-                $250.00
-
-                0
-                Add to cart
+                
+                <ButtonAdd />
             </div>
         )
     }

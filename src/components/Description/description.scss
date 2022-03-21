@@ -1,3 +1,46 @@
-.Dis{
+@import '../../css/variables.scss';
+
+.Description{
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: $Font;
+}
+
+.Company{
+    color: $orange;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+}
+
+.Title{
+    font-size: 2rem;
+    font-weight: 700;
+    padding-top: 2rem;
+}
+
+.Text{
+    font-size: 1rem;
+    color: $Dark-grayish-blue;
+    padding-top: 2rem;
+}
+
+.Prices{
+    width: 100%;
+    padding-top: 2rem;
+    //float:left;
+}
+
+.Discount{
+    background-color: $Pale-orange;
+    color: $orange;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    padding: 0.25rem 0.25rem;
+    font-size: 0.5rem;
 }
