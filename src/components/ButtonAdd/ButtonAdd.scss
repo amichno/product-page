@@ -1,4 +1,50 @@
-.AddTp{
+@import '../../css/variables.scss';
+
+.AddTo{
     display: flex;
     flex-direction: row;
+    width: 100%;
+    height: 3rem;
+    padding-top: 1rem;
+}
+
+.Plus{
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../../images/icon-plus.svg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    
+    background-color: $Light-grayish-blue;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.Minus{
+    width: 2rem;
+    height: 2rem;
+    background-image: url('../../images/icon-minus.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    margin-right: 1rem;
+    background-color: $Light-grayish-blue;
+    -webkit-border-top-right-radius: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+    -moz-border-radius-topright: 5px;
+    -moz-border-radius-bottomright: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.Pcs{
+    width: 2rem;
+    height: 2rem;
+    background-color: $Light-grayish-blue;
+
 }

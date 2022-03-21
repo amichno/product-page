@@ -1,4 +1,5 @@
 import React from "react";
+import './ButtonAdd.scss';
 
 class ButtonAdd extends React.Component{
 
@@ -6,7 +7,7 @@ class ButtonAdd extends React.Component{
         return(
             <div className="AddTo">
                 <button className="Plus"></button>
-                <div>
+                <div className="Pcs">
                     0
                 </div>
                 <button className="Minus"></button>
