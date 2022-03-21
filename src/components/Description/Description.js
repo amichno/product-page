@@ -21,10 +21,7 @@ class Description extends React.Component{
                 <div className='Prices'>
                     <p class="AfterDiscount">$125.00     <span className='Discount'>50%</span></p>
                     <p className='BeforeDiscount'>$250.00</p>
-                </div>
-               
-
-                
+                </div>              
                 <ButtonAdd />
             </div>
         )

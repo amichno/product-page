@@ -101,6 +101,28 @@
   width: 8rem;
   height: 8rem;
   border-radius: 20px;
+  border: 2px solid white;
   cursor: pointer;
+}
+
+.Item:hover {
+  border: 2px solid #ff7d1a;
+}
+
+.Item {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 20px;
+  border: 2px solid #ff7d1a;
+  cursor: pointer;
+}
+
+.Item.View {
+  border: 2px solid #ff7d1a;
+  background-color: rgba(182, 188, 200, 0.5);
+  opacity: 0.5;
 }
 /*# sourceMappingURL=gallery.css.map */

@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './gallery.scss';
 
 const index = [1,2,3,4];
+const classThumb = "";
 const url_image ="../../images/image-product-";
 
 
@@ -23,6 +24,8 @@ class Gallery extends React.Component{
 
     render()
     {
+        
+        
         return(
             <div className='Gal'>
                     <div className='FullsizeImg' >
@@ -35,7 +38,7 @@ class Gallery extends React.Component{
                                     </div>
                                     <div className='ImgWraper LB'>
                                         {index.map((id) =>
-                                            <div className='Thumbnail Lb' >                                
+                                            <div className='Thumbnail Lb' >   
                                                     <img className = 'Item' src={require("../../images/image-product-"+id+"-thumbnail.jpg")}
                                                     onClick={()=>this.ChangeImg(id, 'flex')}/>
                                             </div>
@@ -46,9 +49,15 @@ class Gallery extends React.Component{
                     </div>
                     <div className='ImgWraper'>
                         {index.map((id) =>
-                            <div className='Thumbnail' >                                
-                                    <img className = "Item" src={require("../../images/image-product-"+id+"-thumbnail.jpg")}
+                             id == this.state.view ?
+                            <div className='Thumbnail' >    
+                                    <img className = "Item View" src={require("../../images/image-product-"+id+"-thumbnail.jpg")}
                                      onClick={()=>this.ChangeImg(id, 'none')}/>
+                            </div>
+                            :
+                            <div className='Thumbnail' >    
+                                <img className = "Item" src={require("../../images/image-product-"+id+"-thumbnail.jpg")}
+                                onClick={()=>this.ChangeImg(id, 'none')}/>
                             </div>
                         )}                  
 
