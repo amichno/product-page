@@ -26,7 +26,7 @@ class Gallery extends React.Component{
         return(
             <div className='Gal'>
                     <div className='FullsizeImg' >
-                         <img className = "FullImg" src={require("../../images/image-product-"+this.state.view+".jpg")} 
+                         <img className = 'FullImg' src={require("../../images/image-product-"+this.state.view+".jpg")} 
                               onClick= {()=>this.ChangeImg(this.state.view,'flex')}/>
                                  <div className='GalLB' style={{display:this.state.displayLB}}>
                                     <div className='FullsizeImg LB' >
@@ -36,7 +36,7 @@ class Gallery extends React.Component{
                                     <div className='ImgWraper LB'>
                                         {index.map((id) =>
                                             <div className='Thumbnail Lb' >                                
-                                                    <img className = "Item" src={require("../../images/image-product-"+id+"-thumbnail.jpg")}
+                                                    <img className = 'Item' src={require("../../images/image-product-"+id+"-thumbnail.jpg")}
                                                     onClick={()=>this.ChangeImg(id, 'flex')}/>
                                             </div>
                                         )}                  

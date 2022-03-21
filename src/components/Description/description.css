@@ -43,11 +43,27 @@
   padding-top: 2rem;
 }
 
-.Discount {
+.AfterDiscount {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.AfterDiscount span {
+  vertical-align: 0.3rem;
   background-color: #ffede0;
   color: #ff7d1a;
-  border-radius: 15px;
-  padding: 0.25rem 0.25rem;
-  font-size: 0.5rem;
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.1rem;
+  margin-left: 0.5rem;
+}
+
+.BeforeDiscount {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #b6bcc8;
+  text-decoration: line-through;
+  padding-top: 0.5rem;
 }
 /*# sourceMappingURL=description.css.map */

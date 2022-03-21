@@ -35,12 +35,30 @@
     //float:left;
 }
 
-.Discount{
-    background-color: $Pale-orange;
-    color: $orange;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
-    padding: 0.25rem 0.25rem;
-    font-size: 0.5rem;
+.AfterDiscount{
+    font-size: 1.5rem;
+    font-weight: 600;
+    
+        & span{
+            vertical-align: 0.3rem;
+            background-color: $Pale-orange;
+            color: $orange;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            padding: 0.25rem 0.5rem;
+            font-size: 0.75rem;
+            letter-spacing: 0.1rem;
+            margin-left: 0.5rem;
+        }
 }
+
+.BeforeDiscount{
+    font-size: 1rem;
+    font-weight: 600;
+    color: $Grayish-blue;
+    text-decoration: line-through;
+    padding-top: 0.5rem;
+
+}
+
