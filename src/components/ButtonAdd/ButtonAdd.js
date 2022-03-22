@@ -11,12 +11,13 @@ class ButtonAdd extends React.Component{
 
     ChangeQuantity(plus_or_minus){
         if(this.state.quantity >= 0){
-            {plus_or_minus == "+"?
-                this.setState({quantity:(this.state.quantity += 1)}):
+           if( plus_or_minus == "+")
+                this.setState({quantity:(this.state.quantity += 1)})
+            else if (plus_or_minus == "-" && this.state.quantity > 0)
                 this.setState({quantity:(this.state.quantity -= 1)})
             }
-        }
     }
+    
 
     render(){
         return(

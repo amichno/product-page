@@ -18,6 +18,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0 1.5rem 15px $Pale-orange;
+    cursor: pointer;
     img{
         filter: brightness(100);
         padding-right: 1rem;
