@@ -1,0 +1,29 @@
+@import '../../css/variables.scss';
+
+.AddToCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ButtonAddToCart{
+    width: 15rem;
+    height: 3rem;
+    background-color:$orange ;
+    border: none;
+    vertical-align: middle;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        filter: brightness(100);
+        padding-right: 1rem;
+    }
+     span{
+        color: $White;
+        font-weight: 600;
+    }
+}

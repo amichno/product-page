@@ -1,5 +1,6 @@
 import React from "react";
 import './ButtonAdd.scss';
+import AddToCart from "../AddToCart/AddToCart";
 
 class ButtonAdd extends React.Component{
 
@@ -25,7 +26,7 @@ class ButtonAdd extends React.Component{
                     {this.state.quantity}
                 </div>
                 <button className="Minus" onClick={()=> this.ChangeQuantity("-")}></button>
-                <button className="AddToCart"></button>
+                <AddToCart />
             </div>
 
         )
