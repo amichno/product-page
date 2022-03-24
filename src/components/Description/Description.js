@@ -19,7 +19,7 @@ class Description extends React.Component{
                     durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
                 </div>
                 <div className='Prices'>
-                    <p class="AfterDiscount">$125.00     <span className='Discount'>50%</span></p>
+                    <p className='AfterDiscount'>$125.00     <span className='Discount'>50%</span></p>
                     <p className='BeforeDiscount'>$250.00</p>
                 </div>              
                 <ButtonAdd />

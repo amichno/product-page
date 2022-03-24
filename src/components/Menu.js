@@ -11,8 +11,8 @@ class Menu extends React.Component{
         return(
             <div className='Menu'>
                 <ul className='MenuList'>
-                    {menu.map((item) => 
-                    <li>{item}</li>
+                    {menu.map((item,id) => 
+                    <li key={id}>{item}</li>
                     )}
                 </ul>
             </div>

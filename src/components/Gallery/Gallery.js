@@ -38,7 +38,7 @@ class Gallery extends React.Component{
                                     </div>
                                     <div className='ImgWraper LB'>
                                         {index.map((id) =>
-                                            <div className='Thumbnail Lb' >   
+                                            <div className='Thumbnail Lb' key={id}>   
                                                     <img className = 'Item' src={require("../../images/image-product-"+id+"-thumbnail.jpg")}
                                                     onClick={()=>this.ChangeImg(id, 'flex')}/>
                                             </div>
@@ -48,14 +48,14 @@ class Gallery extends React.Component{
                                 </div>
                     </div>
                     <div className='ImgWraper'>
-                        {index.map((id) =>
+                        {index.map((id) => 
                              id == this.state.view ?
-                            <div className='Thumbnail' >    
+                            <div className='Thumbnail' key={id} >    
                                     <img className = "Item View" src={require("../../images/image-product-"+id+"-thumbnail.jpg")}
                                      onClick={()=>this.ChangeImg(id, 'none')}/>
                             </div>
                             :
-                            <div className='Thumbnail' >    
+                            <div className='Thumbnail' key={id} >    
                                 <img className = "Item" src={require("../../images/image-product-"+id+"-thumbnail.jpg")}
                                 onClick={()=>this.ChangeImg(id, 'none')}/>
                             </div>
