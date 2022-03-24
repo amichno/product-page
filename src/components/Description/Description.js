@@ -5,6 +5,9 @@ import ButtonAdd from '../ButtonAdd/ButtonAdd';
 
 
 class Description extends React.Component{
+    constructor(props){
+        super(props)
+    }
 
     render()
     {

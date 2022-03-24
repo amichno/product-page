@@ -2,6 +2,7 @@ import React from 'react';
 import Gallery from './Gallery/Gallery';
 import Description from './Description/Description';
 import '../css/section.scss';
+import {product} from '../data/product';
 
 
 class Section extends React.Component{
@@ -11,7 +12,7 @@ class Section extends React.Component{
         return(
             <section>
                <Gallery />
-               <Description />
+               <Description Product = {product}/>
             </section>
         )
     }
