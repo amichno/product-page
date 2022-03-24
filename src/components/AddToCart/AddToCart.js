@@ -1,7 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './addToCart.scss';
-import {cartList} from '../../data/cartList'
+import {cartList} from '../../data/cartList';
+
 
 
 class AddToCart extends React.Component{
@@ -12,13 +13,13 @@ class AddToCart extends React.Component{
     }
 
     AddToBasket(pcs){
-      console.log(pcs);  
+      
     }
 
     render()
     {
         return(
-            <div className='AddToCart'>
+            <div className='AddToCart'>{console.log(this.props.Product)}
                 <button className="ButtonAddToCart" onClick={()=>this.AddToBasket(this.props.Quant) }>
                     <img src = '../../images/icon-cart.svg'></img>
                     <span>Add to cart</span> 

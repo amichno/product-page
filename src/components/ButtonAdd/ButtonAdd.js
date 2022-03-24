@@ -4,8 +4,8 @@ import AddToCart from "../AddToCart/AddToCart";
 
 class ButtonAdd extends React.Component{
 
-    constructor(){
-        super();
+    constructor(props){
+        super(props);
         this.state = {quantity: 0};
     }
 
@@ -27,7 +27,7 @@ class ButtonAdd extends React.Component{
                     {this.state.quantity}
                 </div>
                 <button className="Minus" onClick={()=> this.ChangeQuantity("-")}></button>
-                <AddToCart Quant={this.state.quantity}/>
+                <AddToCart Quant={this.state.quantity} Product={this.props.Product}/>
             </div>
 
         )
