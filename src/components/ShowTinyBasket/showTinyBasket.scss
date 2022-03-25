@@ -1,0 +1,47 @@
+@import '../../css/variables.scss';
+
+.ItemInBasket{
+    font-size: 0.8rem;
+    color: $Grayish-blue;
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+}
+
+.NotEmpty{
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    padding-top: 20%;
+    color: $Grayish-blue;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+}
+
+.BasketPhoto{
+    width: 2rem;
+    height: 2rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    flex:1;
+}
+
+
+.BasketText{
+    padding-left: 0.7rem;
+    flex:3;
+}
+
+.Delete{
+    flex:1;
+    width: 2rem;
+    height: 2rem;
+    background-image: url(../../images/icon-delete.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}

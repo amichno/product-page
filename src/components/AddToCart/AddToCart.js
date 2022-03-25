@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import './addToCart.scss';
 import {cartList} from '../../data/cartList';
 
@@ -15,8 +14,6 @@ class AddToCart extends React.Component{
     AddToBasket(pcs){
       cartList.push({id: this.props.Product_id,
                     quantity: pcs});
-      console.log(cartList);
-
     }
 
     render()
