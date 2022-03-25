@@ -13,13 +13,16 @@ class AddToCart extends React.Component{
     }
 
     AddToBasket(pcs){
-      
+      cartList.push({id: this.props.Product_id,
+                    quantity: pcs});
+      console.log(cartList);
+
     }
 
     render()
     {
         return(
-            <div className='AddToCart'>{console.log(this.props.Product)}
+            <div className='AddToCart'>
                 <button className="ButtonAddToCart" onClick={()=>this.AddToBasket(this.props.Quant) }>
                     <img src = '../../images/icon-cart.svg'></img>
                     <span>Add to cart</span> 

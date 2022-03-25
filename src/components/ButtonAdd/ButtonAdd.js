@@ -27,7 +27,7 @@ class ButtonAdd extends React.Component{
                     {this.state.quantity}
                 </div>
                 <button className="Minus" onClick={()=> this.ChangeQuantity("-")}></button>
-                <AddToCart Quant={this.state.quantity} Product={this.props.Product}/>
+                <AddToCart Quant={this.state.quantity} Product_id={0}/>
             </div>
 
         )
