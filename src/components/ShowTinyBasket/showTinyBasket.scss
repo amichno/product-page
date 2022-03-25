@@ -13,13 +13,15 @@
 .NotEmpty{
     padding-left: 0.7rem;
     padding-right: 0.7rem;
-    padding-top: 20%;
+    padding-top: 10%;
     color: $Grayish-blue;
     font-size: 0.8rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     text-align: left;
-
+    justify-content: center;
+    align-items: center;
+    max-height: 15rem;
 }
 
 .BasketPhoto{
@@ -44,4 +46,10 @@
     background-image: url(../../images/icon-delete.svg);
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.BasketSum{
+    font-weight: 600;
+    color: black;
+    padding-left: 0.2rem;
 }

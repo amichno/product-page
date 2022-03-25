@@ -3,10 +3,10 @@
 .Cart{
     background-color: $White;
     width: 20rem;
-    height: 10rem;
+    min-height: 10rem;
     z-index: 5;
     margin-top: 3rem;
-    margin-left: -120%;
+    margin-left: -15%;
     display: flex;
     flex-direction: column;
     -webkit-border-radius: 15px;
@@ -14,14 +14,15 @@
     border-radius: 15px;
     box-shadow: 0 10px 25px $Very-vark-blue-a;
     position: absolute;
-    //background-color: aqua;
     .Cart-title{
         padding: 0.5rem 1rem;
         border-bottom: 1px solid $Grayish-blue-a ;
         font-weight: 600;
         text-align: left;
     }
-
+    //overflow-y: scroll;
+    max-height: 15rem;
+    position: fixed;
 }
 
 .Empty{
