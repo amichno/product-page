@@ -25,6 +25,7 @@ class AddToCart extends React.Component{
                     <span>Add to cart</span> 
                 </button>
             </div>
+            
         )
     }
 }

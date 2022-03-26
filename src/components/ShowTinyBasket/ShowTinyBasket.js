@@ -23,6 +23,9 @@ class ShowTinyBasket extends React.Component{
                             </div>
                         </div>
                 )}
+                <div className='BC'>
+                 <button className='ButtonCheckout'>Checkout</button>
+                </div>
             </div>
         )
     }

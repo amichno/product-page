@@ -6,12 +6,12 @@
     min-height: 10rem;
     z-index: 5;
     margin-top: 3rem;
-    margin-left: -15%;
+    margin-left: -150%;
     display: flex;
     flex-direction: column;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
     box-shadow: 0 10px 25px $Very-vark-blue-a;
     position: absolute;
     .Cart-title{
@@ -20,10 +20,12 @@
         font-weight: 600;
         text-align: left;
     }
-    //overflow-y: scroll;
-    max-height: 15rem;
-    position: fixed;
+    padding-bottom: 1rem;
+    justify-content: center;
+   // align-items: center;
 }
+
+
 
 .Empty{
     padding-left: auto;
