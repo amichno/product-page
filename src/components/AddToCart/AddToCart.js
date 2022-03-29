@@ -12,16 +12,16 @@ class AddToCart extends React.Component{
     }
 
     AddToBasket(pcs){
-        //console.log(cartList[0]);
-       //console.log(this.props.Product_id);
        let search = null;
-       cartList.length == 0?
-       cartList.push({id:this.props.Product_id, quantity:pcs})
-       :
-       search = cartList.findIndex(id => id.id === this.props.Product_id);
-       console.log(search);
-        cartList[search] = {id: this.props.Product_id,
-                            quantity: cartList[search].quantity+this.props.Quant };
+       if(cartList.length == 0) 
+             cartList.push({id:this.props.Product_id, quantity:pcs})
+        else
+        {
+            search = cartList.findIndex(id => id.id === this.props.Product_id);
+            console.log(search);
+            cartList[search] = {id: this.props.Product_id,
+                                quantity: cartList[search].quantity+this.props.Quant };
+         }       
     }
 
     render()
