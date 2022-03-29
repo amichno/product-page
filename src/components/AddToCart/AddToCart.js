@@ -12,8 +12,11 @@ class AddToCart extends React.Component{
     }
 
     AddToBasket(pcs){
-      cartList.push({id: this.props.Product_id,
-                    quantity: pcs});
+
+       cartList.findIndex(id);
+       console.log( cartList.findIndex(id));
+      /*cartList.push({id: this.props.Product_id,
+                    quantity: pcs});*/
     }
 
     render()
