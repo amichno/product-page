@@ -1,1 +1,1 @@
-(./design/desktop-preview.jpg)
+![preview aplication](./design/desktop-preview.jpg)
