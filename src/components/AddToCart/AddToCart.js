@@ -12,11 +12,21 @@ class AddToCart extends React.Component{
     }
 
     AddToBasket(pcs){
-
-       cartList.findIndex(id);
-       console.log( cartList.findIndex(id));
-      /*cartList.push({id: this.props.Product_id,
-                    quantity: pcs});*/
+        //console.log(cartList[0]);
+       //console.log(this.props.Product_id);
+       cartList.length == 0?
+       ():
+       (    const search = cartList.findIndex(id => id.id === this.props.Product_id);
+       console.log(search);
+      // const search = list => list.id === this.props.Product_id;
+       //const index =  cartList.findIndex(search);
+       //console.log(index);
+       //console.log(cartList[index]);
+      /*cartList.push(search,{this.props.Product_id,
+                    quantity: cartList[id].quantity+pcs});*/
+        cartList[search] = {id: this.props.Product_id,
+                            quantity: cartList[search].quantity+this.props.Quant })
+       // console.log(cartList[0]);
     }
 
     render()

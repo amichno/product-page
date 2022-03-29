@@ -1,4 +1,5 @@
-export const cartList =[
+export const cartList =[{id:0,
+quantity:1}
 
 ];
 

@@ -12,7 +12,7 @@ class ShowTinyBasket extends React.Component{
         return(
             <div className='NotEmpty'>
                {cartList.map(({id, quantity}) =>
-                        <div className='ItemInBasket'>
+                        <div className='ItemInBasket' key={id}>
                             <div className='BasketThumbNail'><img className="BasketPhoto" src={product[0].photo} />
                             </div>
                             <div className='BasketText'> 
