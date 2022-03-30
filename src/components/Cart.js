@@ -1,6 +1,5 @@
 import React from 'react';
 import {cartList} from '../data/cartList';
-import { product } from '../data/product.js';
 import '../css/cart.scss';
 import ShowTinyBasket from './ShowTinyBasket/ShowTinyBasket';
 

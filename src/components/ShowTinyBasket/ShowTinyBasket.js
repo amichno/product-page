@@ -7,32 +7,40 @@ import DeleteButton from "../DeleteButton/DeleteButton";
 class ShowTinyBasket extends React.Component{
     constructor(props){
         super(props)
+        this.state = {list:cartList};
+        this.DeleteItem = this.DeleteItem.bind(this);
     }
 
-    DeleteItem(){
-
-    }
+    DeleteItem(id){
+        const new_list = this.state.list.filter(list => list.id != id);
+        this.setState({list:new_list})
+        console.log(new_list);
+        console.log(cartList);
+        //cartList = new_list;
+    }  
 
     render(){
-        return(
-            <div className='NotEmpty'>
-               {cartList.map(({id, quantity}) =>
-                        <div className='ItemInBasket' key={id}>
-                            <div className='BasketThumbNail'><img className="BasketPhoto" src={product[0].photo} />
-                            </div>
-                            <div className='BasketText'> 
-                                <p>{product[id].title}</p>
-                                <p>${product[id].price} x {quantity} <span className="BasketSum">${(product[id].price*quantity).toFixed(2)}</span></p>
-                            </div>
-                            
-                            <DeleteButton Product_id = {id} />
+      
+                return(
+                    <div className='NotEmpty'>
+                    {this.state.list.map(({id, quantity}) =>
+                                <div className='ItemInBasket' key={id}>
+                                    <div className='BasketThumbNail'><img className="BasketPhoto" src={product[0].photo} />
+                                    </div>
+                                    <div className='BasketText'> 
+                                        <p>{product[id].title}</p>
+                                        <p>${product[id].price} x {quantity} <span className="BasketSum">${(product[id].price*quantity).toFixed(2)}</span></p>
+                                    </div>
+                                    <DeleteButton product_id = {id} onClick={()=>this.DeleteItem(id)}/>
+                                </div>
+                        )}
+                        <div className='BC'>
+                            <button className='ButtonCheckout'>Checkout</button>
                         </div>
-                )}
-                <div className='BC'>
-                 <button className='ButtonCheckout'>Checkout</button>
-                </div>
-            </div>
-        )
+                    </div>)
+                    
+                     
+        
     }
 
 }

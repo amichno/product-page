@@ -1,4 +1,4 @@
-export const cartList =[
+export var cartList =[
 
 ];
 
