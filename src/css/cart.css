@@ -1,10 +1,10 @@
 .Cart {
   background-color: white;
-  width: 15rem;
-  height: 10rem;
+  width: 20rem;
+  min-height: 10rem;
   z-index: 5;
   margin-top: 3rem;
-  margin-left: -100%;
+  margin-left: -150%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,10 +12,14 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-radius: 15px;
+  border-radius: 10px;
   -webkit-box-shadow: 0 10px 25px rgba(29, 32, 37, 0.5);
           box-shadow: 0 10px 25px rgba(29, 32, 37, 0.5);
   position: absolute;
+  padding-bottom: 1rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .Cart .Cart-title {
