@@ -28,4 +28,14 @@
   font-weight: 600;
   text-align: left;
 }
-/*# sourceMappingURL=cart.css.map */
+
+.Empty {
+  padding-left: auto;
+  padding-right: auto;
+  padding-top: 20%;
+  padding-bottom: 20%;
+  color: #b6bcc8;
+  font-size: 0.8rem;
+  text-align: center;
+}
+/*# sourceMappingURL=empty.css.map */

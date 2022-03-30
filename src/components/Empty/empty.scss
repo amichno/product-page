@@ -1,4 +1,4 @@
-@import 'variables.scss';
+@import '../../css/variables.scss';
 
 .Cart{
     background-color: $White;
@@ -22,7 +22,20 @@
     }
     padding-bottom: 1rem;
     justify-content: center;
+   // align-items: center;
 }
 
 
 
+
+
+.Empty{
+    padding-left: auto;
+    padding-right: auto;
+    padding-top: 20%;
+    padding-bottom: 20%;
+    color: $Grayish-blue;
+    font-size: 0.8rem;
+    text-align: center;
+    //background-color: aqua;
+}

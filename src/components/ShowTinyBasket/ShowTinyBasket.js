@@ -3,6 +3,7 @@ import {cartList} from '../../data/cartList';
 import { product } from "../../data/product";
 import './showTinyBasket.scss';
 import DeleteButton from "../DeleteButton/DeleteButton";
+import Empty from "../Empty/Empty";
 
 class ShowTinyBasket extends React.Component{
     constructor(props){
@@ -14,13 +15,10 @@ class ShowTinyBasket extends React.Component{
     DeleteItem(id){
         const new_list = this.state.list.filter(list => list.id != id);
         this.setState({list:new_list})
-        console.log(new_list);
-        console.log(cartList);
-        //cartList = new_list;
     }  
 
     render(){
-      
+                if(this.state.list.length > 0)
                 return(
                     <div className='NotEmpty'>
                     {this.state.list.map(({id, quantity}) =>
@@ -38,7 +36,10 @@ class ShowTinyBasket extends React.Component{
                             <button className='ButtonCheckout'>Checkout</button>
                         </div>
                     </div>)
-                    
+                  else
+                   return (<ul>
+                    <p className='Empty'>Your cart is empty</p>                    
+                  </ul>  ) 
                      
         
     }

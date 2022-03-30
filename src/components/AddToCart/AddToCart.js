@@ -7,7 +7,7 @@ import {cartList} from '../../data/cartList';
 class AddToCart extends React.Component{
     constructor(props){
         super(props);
-        this.state ={added:0};
+        this.state ={added:this.props.Quant};
         this.AddToBasket = this.AddToBasket.bind(this);
     }
 

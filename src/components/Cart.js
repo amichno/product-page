@@ -2,6 +2,7 @@ import React from 'react';
 import {cartList} from '../data/cartList';
 import '../css/cart.scss';
 import ShowTinyBasket from './ShowTinyBasket/ShowTinyBasket';
+import Empty from './Empty/Empty';
 
 class Cart extends React.Component{
     constructor(props){
@@ -12,12 +13,7 @@ class Cart extends React.Component{
     render(){
         if (cartList.length == 0)
         return(
-            <div className='Cart' style = {{display: this.props.disp}}>
-                <p className='Cart-title'>Cart</p>
-                <ul>
-                  <p className='Empty'>Your cart is empty</p>                    
-                </ul>       
-            </div>
+            <Empty disp={this.props.disp} />
         )
         else
             return (
