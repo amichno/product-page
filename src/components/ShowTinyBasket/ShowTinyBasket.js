@@ -16,11 +16,9 @@ class ShowTinyBasket extends React.Component{
         const newList = this.state.list.filter(list => list.id != id);
         this.setState({list:newList});
         cartList.pop();
-        //this.props.updateValue(true);
     }  
 
     render(){
-               // if(this.state.list.length > 0)
                 return(
                     <div className='NotEmpty'>
                     {this.state.list.map(({id, quantity}) =>
@@ -38,12 +36,6 @@ class ShowTinyBasket extends React.Component{
                             <button className='ButtonCheckout'>Checkout</button>
                         </div>
                     </div>)
-                 /* else
-                   return (<ul>
-                    <p className='Empty'>Your cart is empty</p>                    
-                  </ul>  ) */
-                     
-        
     }
 
 }
