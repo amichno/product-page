@@ -13,12 +13,14 @@ class ShowTinyBasket extends React.Component{
     }
 
     DeleteItem(id){
-        const new_list = this.state.list.filter(list => list.id != id);
-        this.setState({list:new_list})
+        const newList = this.state.list.filter(list => list.id != id);
+        this.setState({list:newList});
+        cartList.pop();
+        //this.props.updateValue(true);
     }  
 
     render(){
-                if(this.state.list.length > 0)
+               // if(this.state.list.length > 0)
                 return(
                     <div className='NotEmpty'>
                     {this.state.list.map(({id, quantity}) =>
@@ -36,10 +38,10 @@ class ShowTinyBasket extends React.Component{
                             <button className='ButtonCheckout'>Checkout</button>
                         </div>
                     </div>)
-                  else
+                 /* else
                    return (<ul>
                     <p className='Empty'>Your cart is empty</p>                    
-                  </ul>  ) 
+                  </ul>  ) */
                      
         
     }
