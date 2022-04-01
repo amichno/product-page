@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,aAAa,CAAA;EACT,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,gBAAgB,ECLX,OAAkB;EDMvB,qBAAqB,EAAE,IAAI;EAC3B,kBAAkB,EAAE,IAAI;EACxB,aAAa,EAAE,IAAI;CACtB",
+    "sources": [
+        "IconBasket.scss",
+        "../../css/variables.scss"
+    ],
+    "names": [],
+    "file": "IconBasket.css"
+}

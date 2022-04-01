@@ -20,7 +20,11 @@ class AddToCart extends React.Component{
             search = cartList.findIndex(id => id.id === this.props.Product_id);
             cartList[search] = {id: this.props.Product_id,
                                 quantity: cartList[search].quantity+this.props.Quant };
-         }       
+         }  
+       console.log(this.props.orangeIcon);
+       this.props.showOrangeIcon();
+       console.log(this.props.orangeIcon);
+
     }
 
     render()

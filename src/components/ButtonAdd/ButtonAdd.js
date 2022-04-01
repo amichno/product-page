@@ -1,12 +1,16 @@
 import React from "react";
 import './ButtonAdd.scss';
 import AddToCart from "../AddToCart/AddToCart";
+import IconBasket from "../IconBasket/IconBasket";
+
 
 class ButtonAdd extends React.Component{
 
     constructor(props){
         super(props);
-        this.state = {quantity: 0};
+        this.state = {quantity: 0,
+                     showOrangeIcon: 'none'};
+        this.ShowOrangeIcon = this.ShowOrangeIcon.bind(this);
     }
 
     ChangeQuantity(plus_or_minus){
@@ -16,7 +20,16 @@ class ButtonAdd extends React.Component{
             else if (plus_or_minus == "-" && this.state.quantity > 0)
                 this.setState({quantity:(this.state.quantity -= 1)})
             }
+        if(this.state.showOrangeIcon === "true")
+            alert("koszyczek");
     }
+
+    ShowOrangeIcon(){
+       // alert('ok')
+        this.setState({showOrangeIcon: 'flex'});
+    }
+
+   
     
 
     render(){
@@ -27,7 +40,9 @@ class ButtonAdd extends React.Component{
                     {this.state.quantity}
                 </div>
                 <button className="Minus" onClick={()=> this.ChangeQuantity("-")}></button>
-                <AddToCart Quant={this.state.quantity} Product_id={0}/>
+                <AddToCart Quant={this.state.quantity} Product_id={0} 
+                            orangeIcon={this.state.showOrangeIcon} showOrangeIcon={()=>this.ShowOrangeIcon()}/>
+                <IconBasket display={this.state.showOrangeIcon}/>
             </div>
 
         )

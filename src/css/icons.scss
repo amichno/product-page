@@ -12,13 +12,13 @@
 .Chart-icon{
     height: 2rem;
     width: 2rem;
-    background-image: url(../images/icon-cart.svg);
-    background-position: center;
-    background-repeat: no-repeat;
     border: none;
     background-color: $White;
     padding-right: 4rem;
     cursor:pointer;
+    background-image: url(../images/icon-cart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .Avatar{
