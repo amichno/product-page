@@ -1,10 +1,14 @@
 @import '../../css/variables.scss';
 
 .OrangeBasket{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: none;
     background-color: $orange;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
     border-radius: 15px;
+    z-index:10;
+    margin-top: -153%;
+    margin-left: 31%;
 }

@@ -1,7 +1,11 @@
 .OrangeBasket {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  display: none;
   background-color: #ff7d1a;
   border-radius: 15px;
+  z-index: 10;
+  margin-top: -153%;
+  margin-left: 31%;
 }
 /*# sourceMappingURL=IconBasket.css.map */

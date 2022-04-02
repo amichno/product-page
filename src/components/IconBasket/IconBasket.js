@@ -1,4 +1,5 @@
 import React from "react";
+import './IconBasket.scss'
 
 class IconBasket extends React.Component{
 
@@ -9,7 +10,7 @@ class IconBasket extends React.Component{
     render(){
         return(
             <div className="OrangeBasket" style={{display:this.props.display}}>
-
+                    
             </div>
         )
     }
