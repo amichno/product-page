@@ -21,9 +21,7 @@ class AddToCart extends React.Component{
             cartList[search] = {id: this.props.Product_id,
                                 quantity: cartList[search].quantity+this.props.Quant };
          }  
-       console.log(this.props.orangeIcon);
        this.props.showOrangeIcon();
-       console.log(this.props.orangeIcon);
 
     }
 
