@@ -14,15 +14,16 @@ class AddToCart extends React.Component{
     AddToBasket(pcs){
        let search = null;
        if(cartList.length == 0) 
-             cartList.push({id:this.props.Product_id, quantity:pcs})
+            { cartList.push({id:this.props.Product_id, quantity:pcs})
+            }
         else
         {
             search = cartList.findIndex(id => id.id === this.props.Product_id);
             cartList[search] = {id: this.props.Product_id,
                                 quantity: cartList[search].quantity+this.props.Quant };
          }  
-       this.props.showOrangeIcon();
-
+       
+         this.props.showOrangeIcon();
     }
 
     render()

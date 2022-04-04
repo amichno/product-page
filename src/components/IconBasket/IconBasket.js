@@ -6,22 +6,34 @@ class IconBasket extends React.Component{
 
     constructor(props){
         super(props);
+        //this.state = {checkLength: cartList.length}
     }
+
+
 
     render(){
         const quantity = () => {
             let sum = 0;
-            cartList.map((item, id) =>
-            { sum += item.quantity;
-             console.log(sum);}
-            )
+            cartList.map((item) =>
+            { sum += item.quantity;})
             return sum;
         }
-        return(
-            <div className="OrangeBasket" style={{display:this.props.display}}>
-                <p>{quantity()}</p> 
-            </div>
-        )
+
+        const hide = this.props.hideOrangeIcon;
+        if(cartList.length > 0){
+            console.log(cartList.length);
+            return(
+                <div className="OrangeBasket" style={{display:this.props.display}}>
+                    <p>{quantity()}</p> 
+                </div>
+            )
+        }
+        else
+        {            
+            return( 
+                <div>{hide}</div>
+                )
+        }
     }
 
 }

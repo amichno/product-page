@@ -11,6 +11,7 @@ class ButtonAdd extends React.Component{
         this.state = {quantity: 0,
                      showOrangeIcon: 'none'};
         this.ShowOrangeIcon = this.ShowOrangeIcon.bind(this);
+        this.HideOrangeIcon = this.HideOrangeIcon.bind(this);
     }
 
     ChangeQuantity(plus_or_minus){
@@ -20,16 +21,17 @@ class ButtonAdd extends React.Component{
             else if (plus_or_minus == "-" && this.state.quantity > 0)
                 this.setState({quantity:(this.state.quantity -= 1)})
             }
-        if(this.state.showOrangeIcon === "true")
-            alert("koszyczek");
     }
 
     ShowOrangeIcon(){
-       // alert('ok')
         this.setState({showOrangeIcon: 'flex'});
+        console.log('show');
     }
 
-   
+   HideOrangeIcon(){
+    this.setState({showOrangeIcon: 'none'});
+    console.log('hide')
+   }
     
 
     render(){
@@ -41,8 +43,10 @@ class ButtonAdd extends React.Component{
                 </div>
                 <button className="Minus" onClick={()=> this.ChangeQuantity("-")}></button>
                 <AddToCart Quant={this.state.quantity} Product_id={0} 
-                            orangeIcon={this.state.showOrangeIcon} showOrangeIcon={()=>this.ShowOrangeIcon()}/>
-                <IconBasket display={this.state.showOrangeIcon}/>
+                            orangeIcon={this.state.showOrangeIcon} showOrangeIcon={()=>this.ShowOrangeIcon()}
+                            />
+               <IconBasket display={this.state.showOrangeIcon} hideOrangeIcon ={()=>this.HideOrangeIcon()}/>
+                
             </div>
 
         )
