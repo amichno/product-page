@@ -9,7 +9,11 @@ class IconBasket extends React.Component{
         this.state = {checkLength: cartList.length}
     }
 
+    componentWillUnmount(){
+       this.setState({checkLength: cartList.length})
+    }
 
+    
 
     render(){
         const quantity = () => {
@@ -17,21 +21,19 @@ class IconBasket extends React.Component{
             cartList.map((item) =>
             { sum += item.quantity;})
             return sum;
-        }
-        
-        //const hide = this.props.hideOrangeIcon;
+           }
         if(quantity() > 0){
-            console.log(">0 "+this.state.checkLength);
+            console.log(">0 "+ quantity());
             return(
                 <div className="OrangeBasket" style={{display:this.props.display}}>
                     <p>{quantity()}</p> 
                 </div>
             )}
             else
-            {     
-                     
+            {        
+                console.log("0 "+ quantity()); 
                 return( 
-                         <div onMouseOver={()=> this.props.hideOrangeIcon}></div>
+                         <div></div>
                     )
             }
     }

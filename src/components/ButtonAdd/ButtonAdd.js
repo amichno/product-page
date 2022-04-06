@@ -32,22 +32,24 @@ class ButtonAdd extends React.Component{
     this.setState({showOrangeIcon: 'none'});
     console.log(this.state.showOrangeIcon);
    }
+
     
 
     render(){
+        
         return(
-            <div className="AddTo">
-                <button className="Plus" onClick={()=> this.ChangeQuantity("+")}></button>
-                <div className="Pcs">
-                    {this.state.quantity}
+                <div className="AddTo">
+                    <button className="Plus" onClick={()=> this.ChangeQuantity("+")}></button>
+                    <div className="Pcs">
+                        {this.state.quantity}
+                    </div>
+                    <button className="Minus" onClick={()=> this.ChangeQuantity("-")}></button>
+                    <AddToCart Quant={this.state.quantity} Product_id={0} 
+                                orangeIcon={this.state.showOrangeIcon} showOrangeIcon={()=>this.ShowOrangeIcon()}
+                                />
+                <IconBasket display={this.state.showOrangeIcon} hideOrangeIcon ={()=>this.HideOrangeIcon()}/>
+                    
                 </div>
-                <button className="Minus" onClick={()=> this.ChangeQuantity("-")}></button>
-                <AddToCart Quant={this.state.quantity} Product_id={0} 
-                            orangeIcon={this.state.showOrangeIcon} showOrangeIcon={()=>this.ShowOrangeIcon()}
-                            />
-               <IconBasket display={this.state.showOrangeIcon} hideOrangeIcon ={()=>this.HideOrangeIcon()}/>
-                
-            </div>
 
         )
     }
