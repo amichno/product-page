@@ -32,7 +32,6 @@ class ButtonAdd extends React.Component{
     this.setState({showOrangeIcon: 'none'});
     console.log(this.state.showOrangeIcon);
    }
-
     
 
     render(){
