@@ -7,6 +7,10 @@
     justify-content: center;
     align-items: center;
     font-family: $Font;
+    @media  screen and (max-width:$SM-screen) {
+        width:90%;
+        margin-top: 1rem;
+    }
 }
 
 .Company{
@@ -59,6 +63,9 @@
     color: $Grayish-blue;
     text-decoration: line-through;
     padding-top: 0.5rem;
-
+    @media  screen and (max-width:$SM-screen) {
+       float: right;
+       margin-top: -2rem;
+    }
 }
 

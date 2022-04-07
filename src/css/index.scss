@@ -10,6 +10,9 @@
 
 html{
     font-size: 16px;
+    @media only screen and (max-width: $SM-screen) {
+        font-size: 12px;
+    }
 }
 
 #root{
@@ -20,5 +23,8 @@ html{
     margin: 0 auto;
     width: 1440px;
     height: 100vh;
-
+    @media only screen and (max-width: $SM-screen) {
+        width: 375px;
+    }
 }
+

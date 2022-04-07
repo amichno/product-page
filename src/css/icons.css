@@ -12,6 +12,13 @@
   margin-left: 30%;
 }
 
+@media screen and (max-width: 375px) {
+  .Icons {
+    margin-left: auto;
+    margin-right: 1rem;
+  }
+}
+
 .Chart-icon {
   height: 2rem;
   width: 2rem;

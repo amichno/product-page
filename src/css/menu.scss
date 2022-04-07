@@ -5,6 +5,9 @@
     width:fit-content;
     height: 100%;
     width: 40rem;
+    @media screen and (max-width:$SM-screen) {
+        display:none;
+    }
 }
 
 .MenuList{
@@ -22,4 +25,5 @@
 
         }
     }
+    
 }

@@ -13,4 +13,11 @@ header {
   padding-top: 1rem;
   border-bottom: 1px solid grey;
 }
+
+@media screen and (max-width: 375px) {
+  header {
+    width: 375px;
+    border-bottom: 0;
+  }
+}
 /*# sourceMappingURL=header.css.map */

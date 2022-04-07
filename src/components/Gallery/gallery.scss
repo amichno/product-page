@@ -10,6 +10,11 @@
     align-items: center;
     width: 80%;
     padding-right: 2rem;
+    @media  screen and (max-width:$SM-screen) {
+        width:100%;
+        margin-top: 2rem;
+        padding-right: 0px;
+    }
 }
 
 .GalLB{
@@ -35,6 +40,9 @@
         width: 50%;
         padding-top: 5rem;
     }
+    @media  screen and (max-width:$SM-screen) {
+        width:100%;
+    }
 }
 
 .FullImg{
@@ -44,6 +52,11 @@
     border-radius: 20px;
     &.LB{
         width:80%;
+    }
+    @media  screen and (max-width:$SM-screen) {
+        width:100%;
+        border-radius: 0px;
+        
     }
 }
 
@@ -59,6 +72,9 @@
         flex-direction: row;
         justify-content: space-between; 
         width:40%;
+    }
+    @media screen and (max-width: $SM-screen) {
+        display: none;
     }
 }
 

@@ -7,5 +7,21 @@
   z-index: 10;
   margin-top: -153%;
   margin-left: 31%;
+  color: white;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.OrangeBasket p {
+  font-size: 0.7rem;
+  font-weight: 600;
 }
 /*# sourceMappingURL=IconBasket.css.map */

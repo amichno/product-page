@@ -1,3 +1,5 @@
+@import '../css/variables.scss';
+
 header{
     display: flex;
     flex-direction: row;
@@ -6,5 +8,8 @@ header{
     width: 1440px;
     padding-top: 1rem;
     border-bottom: 1px solid grey;
-    //background-color: green;
+    @media  screen and (max-width:$SM-screen) {
+        width:$SM-screen;
+        border-bottom: 0;
+    }
 }

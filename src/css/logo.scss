@@ -1,7 +1,12 @@
+@import '../css/variables.scss';
+
 .Logo{
     background-image: url(../images/logo.svg);
     background-repeat: no-repeat;
     background-position: center;
     height: 20px;
     width: 138px;
+    @media  screen and (max-width:$SM-screen) {
+        margin-left: 1rem;
+    }
 }

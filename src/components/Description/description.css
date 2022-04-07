@@ -18,6 +18,13 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
+@media screen and (max-width: 375px) {
+  .Description {
+    width: 90%;
+    margin-top: 1rem;
+  }
+}
+
 .Company {
   color: #ff7d1a;
   font-weight: 700;
@@ -65,5 +72,12 @@
   color: #b6bcc8;
   text-decoration: line-through;
   padding-top: 0.5rem;
+}
+
+@media screen and (max-width: 375px) {
+  .BeforeDiscount {
+    float: right;
+    margin-top: -2rem;
+  }
 }
 /*# sourceMappingURL=description.css.map */

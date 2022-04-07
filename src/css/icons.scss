@@ -7,6 +7,10 @@
     line-height: 2rem;
     position: relative;
     margin-left: 30%;
+    @media screen and (max-width: $SM-screen) {
+        margin-left: auto;
+        margin-right: 1rem;
+    }
 }
 
 .Chart-icon{

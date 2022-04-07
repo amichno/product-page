@@ -3,7 +3,6 @@ import ReactDOM from 'react-dom';
 import Logo from '../components/Logo';
 import Menu from './Menu';
 import Icons from './Icons';
-
 import '../css/header.scss'
 
 
