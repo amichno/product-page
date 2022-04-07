@@ -25,6 +25,7 @@ class ButtonAdd extends React.Component{
 
     ShowOrangeIcon(){
         this.setState({showOrangeIcon: 'flex'});
+        console.log('show');
     }
 
    HideOrangeIcon(){

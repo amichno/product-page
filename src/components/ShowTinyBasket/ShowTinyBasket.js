@@ -16,7 +16,7 @@ class ShowTinyBasket extends React.Component{
         const newList = this.state.list.filter(list => list.id != id);
         this.setState({list:newList});
         cartList.pop();
-        this.props.changeempty();
+        this.props.changeEmpty();
     }  
 
     render(){

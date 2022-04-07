@@ -29,7 +29,7 @@ class Cart extends React.Component{
             return (
                 <div className='Cart' style = {{display: this.props.disp}}>
                       <p className='Cart-title'>Cart</p>
-                      <ShowTinyBasket isEmpty={this.state.empty} changeempty={()=>this.emptyBasket} />
+                      <ShowTinyBasket isEmpty={this.state.empty} changeEmpty={()=>this.emptyBasket} />
                 </div>
             )
     }
