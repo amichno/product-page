@@ -24,4 +24,10 @@
   font-size: 0.7rem;
   font-weight: 600;
 }
+
+@media screen and (max-width: 375px) {
+  .OrangeBasket {
+    position: absolute;
+  }
+}
 /*# sourceMappingURL=IconBasket.css.map */

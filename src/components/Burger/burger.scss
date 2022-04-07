@@ -1,0 +1,15 @@
+@import '../../css/variables.scss';
+
+.Burger{
+    display: none;
+    @media screen and (max-width:$SM-screen) {
+        display:flex;
+        background-image: url('../../images/icon-menu.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 2rem;
+        height: 2rem;
+        margin-left: 1rem;
+        cursor: pointer;
+    }
+}

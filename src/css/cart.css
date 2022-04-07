@@ -28,4 +28,12 @@
   font-weight: 600;
   text-align: left;
 }
+
+@media screen and (max-width: 375px) {
+  .Cart {
+    position: static;
+    width: 90%;
+    margin-left: auto;
+  }
+}
 /*# sourceMappingURL=cart.css.map */

@@ -14,14 +14,20 @@
     border-radius: 10px;
     box-shadow: 0 10px 25px $Very-vark-blue-a;
     position: absolute;
+    padding-bottom: 1rem;
+    justify-content: center;
     .Cart-title{
         padding: 0.5rem 1rem;
         border-bottom: 1px solid $Grayish-blue-a ;
         font-weight: 600;
         text-align: left;
     }
-    padding-bottom: 1rem;
-    justify-content: center;
+    
+    @media screen and (max-width:$SM-screen) {
+       position: static;
+       width:90%;
+       margin-left: auto;
+    }
 }
 
 

@@ -1,0 +1,19 @@
+.Burger {
+  display: none;
+}
+
+@media screen and (max-width: 375px) {
+  .Burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-image: url("../../images/icon-menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    cursor: pointer;
+  }
+}
+/*# sourceMappingURL=burger.css.map */

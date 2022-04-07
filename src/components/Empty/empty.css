@@ -29,6 +29,15 @@
   text-align: left;
 }
 
+@media screen and (max-width: 375px) {
+  .Cart {
+    position: absolute;
+    width: 350px;
+    margin-right: auto;
+    margin-left: -300%;
+  }
+}
+
 .Empty {
   padding-left: auto;
   padding-right: auto;
