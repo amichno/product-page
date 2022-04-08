@@ -10,7 +10,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: 15rem;
+  padding-top: 15rem;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -26,6 +26,12 @@
     width: 100%;
     margin-top: 2rem;
     padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Gal {
+    padding-top: 1rem;
   }
 }
 
@@ -68,6 +74,12 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .FullsizeImg {
+    width: 90%;
+  }
+}
+
 .FullImg {
   width: 100%;
   border-radius: 20px;
@@ -81,6 +93,12 @@
   .FullImg {
     width: 100%;
     border-radius: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .FullImg {
+    width: 60%;
   }
 }
 
@@ -119,6 +137,12 @@
 @media screen and (max-width: 375px) {
   .ImgWraper {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .ImgWraper {
+    width: 60%;
   }
 }
 

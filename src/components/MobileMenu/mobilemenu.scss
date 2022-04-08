@@ -1,0 +1,36 @@
+@import '../../css/variables.scss';
+
+.MobileMenu{
+    display: none;
+    width:40%;
+    height: 100vh;
+    background-color: $White;
+    font-family: $Font;
+    color: black;
+    font-weight: 600;
+    z-index: 5;
+    position:absolute;
+    top: 0;
+    left:0;
+
+}
+
+.MobileList{
+    padding-top: 3rem;
+    z-index: 10;
+    list-style: none;
+    li{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+}
+
+.CloseMenu{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-image: url(../../images/icon-close.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}

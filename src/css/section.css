@@ -2,7 +2,6 @@ section {
   height: 80%;
   width: 90%;
   padding-top: 2rem;
-  margin-top: -2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,6 +27,19 @@ section {
             justify-content: center;
     width: 100%;
     padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    padding-top: 1rem;
   }
 }
 /*# sourceMappingURL=section.css.map */

@@ -11,6 +11,12 @@
         width:90%;
         margin-top: 1rem;
     }
+
+    @media screen and (max-width:$M-screen) {
+        width: 80%;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
 }
 
 .Company{

@@ -5,13 +5,11 @@
   background-color: #ff7d1a;
   border-radius: 15px;
   z-index: 10;
-  margin-top: -153%;
-  margin-left: 31%;
+  position: absolute;
+  top: 1rem;
+  right: 9vw;
   color: white;
   text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -28,6 +26,8 @@
 @media screen and (max-width: 375px) {
   .OrangeBasket {
     position: absolute;
+    top: 0.5rem;
+    right: 3.5rem;
   }
 }
 /*# sourceMappingURL=IconBasket.css.map */

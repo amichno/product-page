@@ -25,6 +25,14 @@
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .Description {
+    width: 80%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
 .Company {
   color: #ff7d1a;
   font-weight: 700;

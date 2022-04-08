@@ -1,5 +1,6 @@
 import React from "react";
 import './burger.scss';
+import MobileMenu from "../MobileMenu/MobileMenu";
 
 class Burger extends React.Component{
     constructor(){
@@ -9,13 +10,18 @@ class Burger extends React.Component{
     }
 
     ShowHideMobileMenu(){
-        console.log('show hide');
+       if(this.state.display === 'none')
+            this.setState({display: 'flex'})
+        else 
+            this.setState({display: 'none'})
     }
 
     render(){
         return(
             <div className="Burger" onClick ={this.ShowHideMobileMenu}>
+                <MobileMenu disp={this.state.display} onClick ={this.ShowHideMobileMenu}/>
             </div>
+            
         )
     }
 }
