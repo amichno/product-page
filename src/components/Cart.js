@@ -29,10 +29,12 @@ class Cart extends React.Component{
             return (
                 <div className='Cart' style = {{display: this.props.disp}}>
                       <p className='Cart-title'>Cart</p>
-                      <ShowTinyBasket isEmpty={this.state.empty} changeEmpty={()=>this.emptyBasket} />
+                      
                 </div>
             )
     }
 }
 
 export default Cart;
+
+//<ShowTinyBasket isEmpty={this.state.empty} changeEmpty={()=>this.emptyBasket} />
