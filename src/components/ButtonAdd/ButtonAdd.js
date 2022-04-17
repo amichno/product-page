@@ -47,7 +47,7 @@ class ButtonAdd extends React.Component{
                     <AddToCart Quant={this.state.quantity} Product_id={0} 
                                 orangeIcon={this.state.showOrangeIcon} showOrangeIcon={()=>this.ShowOrangeIcon()}
                                 />
-                <IconBasket display={this.state.showOrangeIcon} hideOrangeIcon ={()=>this.HideOrangeIcon()}/>
+                
                     
                 </div>
 
@@ -57,3 +57,4 @@ class ButtonAdd extends React.Component{
 }
 
 export default ButtonAdd;
+//<IconBasket display={this.state.showOrangeIcon} hideOrangeIcon ={()=>this.HideOrangeIcon()}/>
