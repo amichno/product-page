@@ -8,6 +8,7 @@ header{
     width: 1440px;
     padding-top: 1rem;
     border-bottom: 1px solid grey;
+    padding-bottom: 1rem;
     @media  screen and (max-width:$SM-screen) {
         width:$SM-screen;
         border-bottom: 0;

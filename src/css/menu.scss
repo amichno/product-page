@@ -14,11 +14,13 @@
     list-style: none;
     display: block;
    // width: 30rem;
+   padding-bottom: 1rem;
     li{
         float: left;
         padding: 0 1rem;
         padding-bottom: 2rem;
-        border-bottom: 5px solid $White;
+        border-bottom: 5px solid transparent;
+        
         &:hover{
             border-bottom: 5px solid $orange;
             cursor: pointer;
