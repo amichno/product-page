@@ -11,7 +11,7 @@ class Menu extends React.Component{
             <div className='Menu'>
                 <ul className='MenuList'>
                     {menu.map((item,id) => 
-                    <li key={id}>{item}</li>
+                    <li className = 'MenuLi' key={id}>{item}</li>
                     )}
                 </ul>
             </div>

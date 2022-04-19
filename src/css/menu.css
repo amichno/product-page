@@ -19,7 +19,7 @@
   height: 100%;
 }
 
-.MenuList li {
+.MenuList .MenuLi {
   float: left;
   padding: 0 1rem;
   padding-bottom: 2rem;
@@ -27,7 +27,7 @@
   cursor: pointer;
 }
 
-.MenuList li:hover {
+.MenuList .MenuLi:hover {
   border-bottom: 5px solid #ff7d1a;
 }
 /*# sourceMappingURL=menu.css.map */
