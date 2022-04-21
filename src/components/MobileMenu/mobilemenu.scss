@@ -1,7 +1,8 @@
 @import '../../css/variables.scss';
 
 .MobileMenu{
-    display: none;
+    display: flex;
+    visibility: hidden;
     width:40%;
     height: 100vh;
     background-color: $White;
@@ -12,8 +13,8 @@
     position:absolute;
     top: 0;
     left:0;
-    transform: translateX(10%);
-    transition: transform .5s ease;
+    //transform: translateX(10%);
+    transition: all .3s ease-in-out;
 }
 
 .MobileList{

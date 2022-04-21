@@ -10,7 +10,7 @@ class MobileMenu extends React.Component{
 
     render(){
         return(
-            <div className="MobileMenu" style={{display: this.props.disp}}>
+            <div className="MobileMenu" style={{visibility: this.props.disp}}>
                 <div className="CloseMenu" >
                 </div>
                 <ul className="MobileList">
