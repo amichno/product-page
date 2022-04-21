@@ -2,7 +2,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  visibility: hidden;
   width: 40%;
   height: 100vh;
   background-color: white;
@@ -12,13 +11,11 @@
   z-index: 5;
   position: absolute;
   top: 0;
-  left: -40%;
+  left: -80%;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: -webkit-transform 2s ease-in;
-  transition: -webkit-transform 2s ease-in;
-  transition: transform 2s ease-in;
-  transition: transform 2s ease-in, -webkit-transform 2s ease-in;
+  -webkit-transition: 0.3s ease-in;
+  transition: 0.3s ease-in;
 }
 
 .MobileList {
