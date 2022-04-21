@@ -5,15 +5,15 @@ import MobileMenu from "../MobileMenu/MobileMenu";
 class Burger extends React.Component{
     constructor(){
         super();
-        this.state = {display: 'hidden'};
+        this.state = {display: '-80%'};
         this.ShowHideMobileMenu = this.ShowHideMobileMenu.bind(this);
     }
 
     ShowHideMobileMenu(){
-       if(this.state.display === 'hidden')
-            this.setState({display: 'visible'})
+       if(this.state.display === '-80%')
+            this.setState({display: '-40%'})
         else 
-            this.setState({display: 'hidden'})
+            this.setState({display: '-80%'})
     }
 
     render(){

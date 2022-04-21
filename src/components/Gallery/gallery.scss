@@ -12,8 +12,9 @@
     padding-right: 2rem;
     @media  screen and (max-width:$SM-screen) {
         width:100%;
-        margin-top: 2rem;
-        padding-right: 0px;
+        height: 100vw;
+        margin: 2rem auto;
+        
     }
 
     @media screen and (max-width: $M-screen) {
@@ -46,6 +47,7 @@
     }
     @media  screen and (max-width:$SM-screen) {
         width:100%;
+        
     }
 
     @media screen and(max-width:$M-screen) {
@@ -63,13 +65,12 @@
     &.LB{
         width:80%;
     }
-    @media  screen and (max-width:$SM-screen) {
-        width:100%;
+    @media (max-width:$SM-screen) {
+        width:90vw;
         border-radius: 0px;
-        
     }
 
-    @media screen and (max-width: $M-screen) {
+    @media screen and (min-width:$SM-screen) and (max-width: $M-screen) {
         width: 60%;
     }
 }
