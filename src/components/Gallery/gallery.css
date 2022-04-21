@@ -20,11 +20,11 @@
   padding-right: 2rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .Gal {
     width: 100%;
-    margin-top: 2rem;
-    padding-right: 0px;
+    height: 100vw;
+    margin: 2rem auto;
   }
 }
 
@@ -67,7 +67,7 @@
   padding-top: 5rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .FullsizeImg {
     width: 100%;
   }
@@ -88,14 +88,14 @@
   width: 80%;
 }
 
-@media screen and (max-width: 375px) {
+@media (max-width: 376px) {
   .FullImg {
-    width: 100%;
+    width: 90vw;
     border-radius: 0px;
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (min-width: 376px) and (max-width: 1024px) {
   .FullImg {
     width: 60%;
   }
@@ -133,7 +133,7 @@
   width: 40%;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .ImgWraper {
     display: none;
   }
