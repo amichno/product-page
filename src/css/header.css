@@ -16,9 +16,9 @@ header {
   padding-bottom: 1rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   header {
-    width: 375px;
+    width: 376px;
     border-bottom: 0;
   }
 }
