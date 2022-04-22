@@ -23,15 +23,19 @@ class Gallery extends React.Component{
     
 
     render()
-    {
-        
+    {  
         
         return(
             <div className='Gal'>
+                    
                     <div className='FullsizeImg' >
                          <img className = 'FullImg' src={require("../../images/image-product-"+this.state.view+".jpg")} 
                               onClick= {()=>this.ChangeImg(this.state.view,'flex')}/>
+
                                  <div className='GalLB' style={{display:this.state.displayLB}}>
+                                    <div className='CloseLB'  onClick= {()=>this.ChangeImg(this.state.view,'none')}>
+                                       
+                                    </div>
                                     <div className='FullsizeImg LB' >
                                         <img className = "FullImg LB" src={require("../../images/image-product-"+this.state.view+".jpg")} 
                                         onClick= {()=>this.ChangeImg(this.state.view,'none')}/>

@@ -117,6 +117,14 @@
   top: 10%;
 }
 
+@media (max-width: 376px) {
+  .FullImg.LB {
+    width: 90%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+
 @media screen and (min-width: 376px) and (max-width: 1024px) {
   .FullImg.LB {
     width: 50%;
@@ -125,15 +133,13 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1444px) {
   .FullImg.LB {
-    width: 50%;
+    width: 40%;
   }
 }
 
-@media (max-width: 376px) {
+@media screen and (min-width: 1444px) {
   .FullImg.LB {
-    width: 90%;
-    -o-object-fit: contain;
-       object-fit: contain;
+    width: 70%;
   }
 }
 
@@ -190,13 +196,19 @@
 
 @media screen and (min-width: 1024px) and (max-width: 1444px) {
   .ImgWraper.LB {
-    width: 60%;
+    width: 50%;
   }
 }
 
 @media screen and (min-width: 376px) and (max-width: 1024px) {
   .ImgWraper.LB {
     width: 60%;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .ImgWraper.LB {
+    width: 35%;
   }
 }
 
@@ -242,5 +254,36 @@
   border: 2px solid #ff7d1a;
   background-color: rgba(182, 188, 200, 0.5);
   opacity: 0.5;
+}
+
+.CloseLB {
+  background-image: url(../../images/icon-close.svg);
+  background-repeat: no-repeat;
+  background-position: right;
+  width: 50%;
+  height: 2rem;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  position: absolute;
+  top: 5%;
+}
+
+@media screen and (min-width: 376px) and (max-width: 1024px) {
+  .CloseLB {
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1444px) {
+  .CloseLB {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 1444px) {
+  .CloseLB {
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=gallery.css.map */

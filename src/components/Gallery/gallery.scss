@@ -86,15 +86,18 @@
         //position: absolute;
         left:30%;
         top:10%;
+        @media (max-width: $SM-screen){
+            width: 90%;
+            object-fit: contain;
+        }
        @media screen and (min-width:$SM-screen) and (max-width: $M-screen) {
             width: 50%;
         }
         @media screen and (min-width:$M-screen) and (max-width: $L-screen) {
-            width: 50%;
+            width: 40%;
         }
-        @media (max-width: $SM-screen){
-            width: 90%;
-            object-fit: contain;
+        @media screen and (min-width:$L-screen) {
+            width: 70%;
         }
     }
     @media (max-width:$SM-screen) {
@@ -123,10 +126,13 @@
                 display: none;
             }
             @media screen and (min-width:$M-screen) and (max-width: $L-screen) {
-                width: 60%;
+                width: 50%;
           }
           @media screen and (min-width:$SM-screen) and (max-width: $M-screen) {
             width: 60%;
+          }
+          @media screen and (min-width:$L-screen) {
+            width: 35%;
           }
         }
         @media screen and (max-width: $SM-screen) {
@@ -165,5 +171,26 @@
        background-color: $Grayish-blue-a;
        opacity: 0.5;
     }
+}
+
+.CloseLB{
+    background-image: url(../../images/icon-close.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 50%;
+    height: 2rem;
+    flex:4;
+    position: absolute;
+    top:5%;
+    @media screen and(min-width:$SM-screen) and (max-width:$M-screen)  {
+        width:90%;   
+    }
+    @media screen and(min-width:$M-screen) and (max-width:$L-screen)  {
+        width: 50%;
+        
+    }
+    @media screen and (min-width:$L-screen) {
+        width: 70%;
+      }
 }
 
