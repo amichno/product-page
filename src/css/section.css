@@ -16,7 +16,7 @@ section {
       justify-content: space-around;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   section {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;

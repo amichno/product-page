@@ -18,7 +18,7 @@
   font-family: "Kumbh Sans", sans-serif;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .Description {
     width: 90%;
     margin-top: 1rem;
@@ -82,7 +82,7 @@
   padding-top: 0.5rem;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .BeforeDiscount {
     float: right;
     margin-top: -2rem;

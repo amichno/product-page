@@ -29,7 +29,7 @@
   text-align: left;
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 376px) {
   .Cart {
     position: static;
     width: 90%;

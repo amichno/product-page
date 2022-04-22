@@ -17,8 +17,11 @@
         
     }
 
-    @media screen and (max-width: $M-screen) {
+    @media screen and (min-width:$SM-screen) and (max-width: $M-screen) {
         padding-top: 1rem;
+        width:60%;
+        height: 60vw;
+        margin: 2rem auto;
     }
 }
 
@@ -28,32 +31,42 @@
     align-items: center;
     justify-content: center;
     z-index: 10;
-    background-color: hsla(197, 27%, 9%, 0.3);
-    width: 100%;
-    height: 100%;
+    background-color: hsla(197, 27%, 9%, 0.4);
+    width: 100vw;
+    height: 100vh;
     position: absolute;
-    margin-top: -43rem;
-    margin-left: -10rem;
+    top:0;
+    left:0;
     background-size: cover;
+    @media screen and (max-width: $SM-screen) {
+        display: none;
+    }
 }
 
 
 
 .FullsizeImg{
     width: 80%;
+    height: 100%;
     &.LB{
         width: 50%;
         padding-top: 5rem;
+        @media screen and(min-width:$SM-screen) and (max-width:$M-screen)  {
+            width:90%;
+            height: 90%;
+        }
+        @media screen and(min-width:$M-screen) and (max-width:$L-screen)  {
+            //margin-top: 15vh;
+            width: 100%;
+            height: 100%;
+        }
     }
     @media  screen and (max-width:$SM-screen) {
-        width:100%;
-        
+        width:100%; 
     }
 
-    @media screen and(max-width:$M-screen) {
-        width:90%;
-
-        
+    @media screen and(min-width:$SM-screen) and (max-width:$M-screen)  {
+        width:90%; 
     }
 }
 
@@ -63,7 +76,29 @@
     -moz-border-radius: 20px;
     border-radius: 20px;
     &.LB{
-        width:80%;
+        width:100%;
+        height: 100%;
+        object-fit:fill;
+        //height: 100%;
+        //margin-left: auto;
+        //margin-right: auto;
+        
+        //position: absolute;
+        left:30%;
+        top:10%;
+        @media (max-width: $SM-screen){
+            width: 90%;
+            object-fit: contain;
+        }
+       @media screen and (min-width:$SM-screen) and (max-width: $M-screen) {
+            width: 50%;
+        }
+        @media screen and (min-width:$M-screen) and (max-width: $L-screen) {
+            width: 40%;
+        }
+        @media screen and (min-width:$L-screen) {
+            width: 70%;
+        }
     }
     @media (max-width:$SM-screen) {
         width:90vw;
@@ -83,17 +118,29 @@
     justify-content: space-between;  
     padding-top: 1rem;  
     &.LB{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; 
-        width:40%;
-    }
-    @media screen and (max-width: $SM-screen) {
-        display: none;
-    }
-    @media screen and (max-width:$M-screen) {
-        width: 60%;
-    }
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between; 
+            width:30%;
+            @media screen and (max-width: $SM-screen) {
+                display: none;
+            }
+            @media screen and (min-width:$M-screen) and (max-width: $L-screen) {
+                width: 50%;
+          }
+          @media screen and (min-width:$SM-screen) and (max-width: $M-screen) {
+            width: 60%;
+          }
+          @media screen and (min-width:$L-screen) {
+            width: 35%;
+          }
+        }
+        @media screen and (max-width: $SM-screen) {
+            display: none;
+        }
+        @media screen and (min-width: $SM-screen) and (max-width:$M-screen) {
+            width: 60%;
+        }
 }
 
 .Item{
@@ -124,5 +171,26 @@
        background-color: $Grayish-blue-a;
        opacity: 0.5;
     }
+}
+
+.CloseLB{
+    background-image: url(../../images/icon-close.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 50%;
+    height: 2rem;
+    flex:4;
+    position: absolute;
+    top:5%;
+    @media screen and(min-width:$SM-screen) and (max-width:$M-screen)  {
+        width:90%;   
+    }
+    @media screen and(min-width:$M-screen) and (max-width:$L-screen)  {
+        width: 50%;
+        
+    }
+    @media screen and (min-width:$L-screen) {
+        width: 70%;
+      }
 }
 
